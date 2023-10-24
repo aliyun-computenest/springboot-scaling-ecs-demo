@@ -12,7 +12,7 @@
 
 ## 服务架构
 
-本部署架构为单机ecs部署，通过公网ip 8080端口访问
+本部署架构为集群ecs部署，通过eip 8080端口访问，配备负载均衡和弹性伸缩组，具体如图所示:
 <img src="architecture.png" width="1500" height="700" align="bottom"/>
 
 ## 服务构建计费说明
