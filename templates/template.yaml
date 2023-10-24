@@ -98,7 +98,6 @@ Parameters:
     AllowedValues:
       - ecs.c6.large
       - ecs.c6.xlarge
-      - ecs.c6.2xlarge
     Default: ecs.c6.large
   InstancePassword:
     NoEcho: true
