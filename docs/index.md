@@ -91,7 +91,7 @@
     ![image.png](7.png)
 6. 弹性扩缩容
     ![image.png](8.png)
-    ![image.png](9.png))
+    ![image.png](9.png)
     ![image.png](10.png)
     ![image.png](11.png)
    等待结束执行后可以看到资源中新增了3台ecs，完成了扩缩容
