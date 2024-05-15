@@ -3,7 +3,7 @@ Service:
   DeployType: ros
   DeployMetadata:
     ServiceInstanceNameRule:
-      Prefix: dm
+      Prefix: dm-
     SupplierDeployMetadata:
       FileArtifactRelation:
         '{{ computenest::file::springboot }}':
@@ -11,7 +11,7 @@ Service:
           ArtifactVersion: ${Artifact.Artifact_1.ArtifactVersion}
     TemplateConfigs:
       - Name: 集群版
-        Url: 'templates/template.yaml'
+        Url: 'ros_templates/template.yaml'
         AllowedRegions:
           - cn-beijing
           - cn-hangzhou
@@ -31,7 +31,7 @@ Service:
   ServiceInfo:
     Locale: zh-CN
     ShortDescription: spring boot demo
-    Image: 'icons/service_logo.png'
+    Image: 'resources/icons/service_logo.png'
     Name: SpringBoot弹性集群版
   ShareType: Public
   ApprovalType: Manual
@@ -42,4 +42,4 @@ Artifact:
     Description: 这是一个使用SpringBoot的测试包
     ArtifactProperty:
       RegionId: cn-hangzhou
-      Url: 'artifacts/package.tgz'
+      Url: 'resources/artifact_resources/file/package.tgz'
