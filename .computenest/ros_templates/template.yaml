@@ -1,7 +1,4 @@
 ROSTemplateFormatVersion: '2015-09-01'
-Description:
-  en: scaling-ecs
-  zh-cn: ecs部署，支持弹性功能
 # 参数配置
 Parameters:
   PayType:
