@@ -91,11 +91,11 @@ Parameters:
       zh-cn: 实例类型
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
+      ZoneId: ${ZoneId}
       InstanceChargeType: ${PayType}
-    AllowedValues:
-      - ecs.c6.large
-      - ecs.c6.xlarge
-    Default: ecs.c6.large
+      Constraints:
+        InstanceTypeFamily:
+          - ecs.u1
   InstancePassword:
     NoEcho: true
     Type: String
