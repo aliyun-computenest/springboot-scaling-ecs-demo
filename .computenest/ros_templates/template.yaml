@@ -153,6 +153,9 @@ Resources:
           NicType: intranet
   EcsInstanceGroup:
     Type: ALIYUN::ECS::InstanceGroup
+    UpdatePolicy:
+      RollingUpdateForOrigInstances:
+        MaxBatchSize: 1
     Properties:
       # 实例名
       InstanceName:
